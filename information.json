@@ -1,7 +1,7 @@
 {
     "id_name": "watchfolder",
     "name": "Folder watcher",
-    "version": 1,
+    "version": 2,
     "author": "tom",
     "description": "Watches folders and performs actions on the files created inside",
     "dependencies": {

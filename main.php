@@ -56,6 +56,9 @@ class watchfolder{
                 $watchers = self::getWatcherSettings();
                 if(is_array($watchers)){
                     $lastSettingsRead = time();
+                    if(is_file("temp/watchfolder/refreshsettings")){
+                        unlink("temp/watchfolder/refreshsettings");
+                    }
                 }
                 elseif(settings::read('useOldSettingsOnReadFailure')){
                     mklog(2, 'Failed to get refresh watchers data, using old data');
